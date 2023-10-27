@@ -1,0 +1,139 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Agricultural Sustainability using Rabbit Dung and Urine </title>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <div style="color:blue; float:centre;">
+        <!-- Machine Learning Query Receiver -->
+        <form action="{{url_for('predict')}}" method="POST">
+        <h1 style="font-family:Calibri; color:#DE1C25; font-size:55px"> Plant Growth Prediction </h1>
+
+        <h3> Root Lenght </h3><br>
+        <input id="root_length" name="Root_lenght" required="required">
+
+        <h3> Stem Diameter </h3><br>
+        <input id='stem_diameter' name="Stem_diameter" required="required">
+
+        <h3> Chlorophyll </h3><br>
+        <input id='chlorophyll' name="Chlorophyll" required="required">
+        
+        <h3> Above Ground Dry Weight </h3><br>
+        <input id='AG_dry_weight' name="Above_Ground_Dry_Weight" required="required">
+
+        <h3> Above Ground Fresh Weight </h3><br>
+        <input id='AG_fresh_weight' name="Above_Ground_Fresh_Weight" required="required">
+
+        <h3> Nitrogen (N) </h3><br>
+        <input id='nitrogen' name="N" required="required">
+
+        <h3> Phosphorus (P) </h3><br>
+        <input id='phosphorus' name="P" required="required">
+
+        <h3> Calcium (Ca) </h3><br>
+        <input id='calcium' name="Ca" required="required">
+
+        <h3> Magnesium (Mg) </h3><br>
+        <input id='magnesium' name="Mg" required="required">
+        
+        <h3> Comprehensive Evaluation Index (CEI) </h3><br>
+        <input id='cei' name="CEI" required="required"><br><br>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        <h4 style="color:blue; float:right; color:#12DA9D; font-size:30px;">{{ prediction_text }} </h4>
+
+      </form>
+    </div>
+    <style>
+      body{
+        background-color:#1C1BA;
+        text-align:center;
+        padding 0px;
+      }
+      h3 {
+        position: absolute;
+        left:10 px;
+        top:100 px;
+        font-family:Calibri;
+        color:#12DA9D;
+        font-size:20 px;
+      }
+      #root_length {
+        width:100px;
+        height:25px;
+        text-align:center;
+        font-size:20px;
+      }
+
+      #stem_diameter {
+        width:100px;
+        height:25px;
+        text-align:center;
+        font-size:20px;
+      }
+      
+      #chlorophyll {
+        width:100px;
+        height:25px;
+        text-align:center;
+        font-size:20px;
+      }
+
+      #AG_dry_weight {
+        width:100px;
+        height:25px;
+        text-align:center;
+        font-size:20px;
+      }
+
+      #AG_fresh_weight {
+        width:100px;
+        height:25px;
+        text-align:center;
+        font-size:20px;
+      }
+
+      #nitrogen {
+        width:100px;
+        height:25px;
+        text-align:center;
+        font-size:20px;
+      }
+
+      #phosphorus {
+        width:100px;
+        height:25px;
+        text-align:center;
+        font-size:20px;
+      }
+      
+      #calcium {
+        width:100px;
+        height:25px;
+        text-align:center;
+        font-size:20px;
+      }
+
+      #magnesium {
+        width:100px;
+        height:25px;
+        text-align:center;
+        font-size:20px;
+      }
+
+      #cei {
+        width:100px;
+        height:25px;
+        text-align:center;
+        font-size:20px;
+      }
+
+      <br>
+      <br>
+
+</body>
+</html>>
